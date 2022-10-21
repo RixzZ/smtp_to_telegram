@@ -46,7 +46,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Lowercase destination GitHub repository for DockerHub
         id: string
-        uses: ASzc/change-string-case-action@v2
+        uses: ASzc/change-string-case-action@v3
         with:
           string: ${{ github.repository }}
       - name: Build image and push to DockerHub
